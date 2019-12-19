@@ -1,0 +1,58 @@
+{
+    "name": null,
+    "arch": "resnet50_multitask",
+    "paramname": null,
+    "workers": 2,
+    "epochs": 30,
+    "start_epoch": 0,
+    "batch_size": 16,
+    "lr": 0.001,
+    "lr_schedule": "10, 20, 30",
+    "momentum": 0.9,
+    "weight_decay": 0.00001,
+    "print_freq": 10,
+    "resume": null,
+    "evaluate": null,
+    "pretrained": true,
+    "save_best_only": true,
+    "topX": null,
+    "freeze": false,
+    "fix_BN": false,
+    "world_size": 1,
+    "dist_url": "tcp://224.66.41.62:23456",
+    "dist_backend": "gloo",
+    "seed": null,
+    "gpu": 3,
+    "ID": "e_w2v",
+    "device": null,
+    "save_directory": null,
+    "train_loader": "deepsentiment_m_train",
+    "val_loader": "deepsentiment_m_val",
+    "test_loader": "deepsentiment_m_test",
+    "class_len": [8, 6, 6, 6],
+    "num_datasets": 4,
+    "data_dirs": [
+                "/nfs/bigfovea/add_disk0/zijunwei/V2_PublicEmotion/Deepemotion/images-256",
+                "/nfs/bigfovea/add_disk0/zijunwei/V2_PublicEmotion/Emotion6/images",
+                "/nfs/bigfovea/add_disk0/zijunwei/V2_PublicEmotion/UnBiasedEmo/images-256",
+				"/nfs/bigfovea/add_disk0/eugenia/Emotion/Adobe/images-256"
+                 ],
+    "train_files": [
+                "/nfs/bigfovea/add_disk0/zijunwei/V2_PublicEmotion/Deepemotion/z_data/train_8_90_list.pkl",
+                "/nfs/bigfovea/add_disk0/zijunwei/V2_PublicEmotion/Emotion6/z_data/train_8_90.pkl",
+                "/nfs/bigfovea/add_disk0/zijunwei/V2_PublicEmotion/UnBiasedEmo/z_data/train-6_90_list.pkl",
+				"/nfs/bigfovea/add_disk0/zijunwei/V2_PublicEmotion/Adobe/e_data/w2v/train_90.pkl"
+                 ],
+    "val_files": [
+                "/nfs/bigfovea/add_disk0/zijunwei/V2_PublicEmotion/Deepemotion/z_data/train_8_10_list.pkl",
+                "/nfs/bigfovea/add_disk0/zijunwei/V2_PublicEmotion/Emotion6/z_data/val_8_10.pkl",
+                "/nfs/bigfovea/add_disk0/zijunwei/V2_PublicEmotion/UnBiasedEmo/z_data/train-6_10_list.pkl",
+				"/nfs/bigfovea/add_disk0/zijunwei/V2_PublicEmotion/Adobe/e_data/w2v/val_10.pkl"
+                 ],
+    "test_files": [
+                "/nfs/bigfovea/add_disk0/zijunwei/V2_PublicEmotion/Deepemotion/z_data/test_8.pkl",
+                "/nfs/bigfovea/add_disk0/zijunwei/V2_PublicEmotion/Emotion6/z_data/test_8_20.pkl",
+                "/nfs/bigfovea/add_disk0/zijunwei/V2_PublicEmotion/UnBiasedEmo/z_data/test-6.pkl",
+				"/nfs/bigfovea/add_disk0/zijunwei/V2_PublicEmotion/Adobe/e_data/w2v/test_20.pkl"
+                 ]
+}

@@ -1,0 +1,54 @@
+{
+    "name": null,
+    "arch": "resnet50_multiv",
+    "paramname": null,
+    "workers": 2,
+    "epochs": 30,
+    "start_epoch": 0,
+    "batch_size": 32,
+    "lr": 0.001,
+    "lr_schedule": "10, 20, 30",
+    "momentum": 0.9,
+    "weight_decay": 0.00001,
+    "print_freq": 10,
+    "resume": null,
+    "evaluate": null,
+    "pretrained": true,
+    "save_best_only": true,
+    "topX": null,
+    "freeze": false,
+    "fix_BN": false,
+    "world_size": 1,
+    "dist_url": "tcp://224.66.41.62:23456",
+    "dist_backend": "gloo",
+    "seed": null,
+    "gpu": 1,
+    "ID": "withAdobe_w2v",
+    "device": null,
+    "save_directory": null,
+    "train_loader": "deepsentiment_m_train",
+    "val_loader": "deepsentiment_m_val",
+    "test_loader": "deepsentiment_m_test",
+    "class_len": [8, 8, 8],
+    "num_datasets": 3,
+    "data_dirs": [
+                "/nfs/bigfovea/add_disk0/zijunwei/V2_PublicEmotion/Flickr_LDL/images",
+                "/nfs/bigfovea/add_disk0/zijunwei/V2_PublicEmotion/Twitter_LDL/images",
+				"/nfs/bigfovea/add_disk0/eugenia/Emotion/Adobe/images-256"
+                 ],
+    "train_files": [
+                "/nfs/bigfovea/add_disk0/zijunwei/V2_PublicEmotion/Flickr_LDL/v_data/train_8_90.pkl",
+                "/nfs/bigfovea/add_disk0/zijunwei/V2_PublicEmotion/Twitter_LDL/v_data/train_8_90.pkl",
+				"/nfs/bigfovea/add_disk0/zijunwei/V2_PublicEmotion/Adobe/v_data/w2v/train_90.pkl"
+                 ],
+    "val_files": [
+                "/nfs/bigfovea/add_disk0/zijunwei/V2_PublicEmotion/Flickr_LDL/v_data/val_8_10.pkl",
+                "/nfs/bigfovea/add_disk0/zijunwei/V2_PublicEmotion/Twitter_LDL/v_data/val_8_10.pkl",
+				"/nfs/bigfovea/add_disk0/zijunwei/V2_PublicEmotion/Adobe/v_data/w2v/val_10.pkl"
+                 ],
+    "test_files": [
+                "/nfs/bigfovea/add_disk0/zijunwei/V2_PublicEmotion/Flickr_LDL/v_data/test_8_20.pkl",
+                "/nfs/bigfovea/add_disk0/zijunwei/V2_PublicEmotion/Twitter_LDL/v_data/test_8_20.pkl",
+				"/nfs/bigfovea/add_disk0/zijunwei/V2_PublicEmotion/Adobe/v_data/w2v/test_20.pkl"
+                 ]
+}
