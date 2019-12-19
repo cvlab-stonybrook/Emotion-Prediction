@@ -23,7 +23,7 @@ Identical conda environment can be installed using `specs.txt`. At the bare mini
 
 
 ### Training
-You must prepare your own `pkl` files containing the list of image-label pairs of the format (image_relative_path, image_label) -- separate `pkl` files for training, validation and testing. The paths to these files and other parameters must be specified in a config file, and some are included in `main/CNNs/config_files/`. `main/CNNs/mains_emotions/` contains scripts for different learning methods: single- or multi-dataset, sequential or mixed learning. 
+You must prepare your own `pkl` files containing the list of image-label pairs of the format `(image_relative_path, image_label)` -- separate `pkl` files for training, validation and testing. The paths to these files and other parameters must be specified in a config file, and some are included in `main/CNNs/config_files/`. `main/CNNs/mains_emotions/` contains scripts for different learning methods: single- or multi-dataset, sequential or mixed learning. 
 
 Navigate to `main/CNNs/mains_emotions/`, choose the appropriate script and run the command:
 ```
